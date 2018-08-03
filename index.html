@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Trivia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Titan+One" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container" id="header-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="container-text">
+                    TRIVIA
+                </div>
+            </div>
+        </div>
+    <hr>
+    <button class="btn btn-danger btn-block" id="start">START</button>
+    </div>
+    <div class="container" id="question-box">
+        <div class="row">
+            <div class="col-12">
+                    <span id="current-question"></span>
+                </p>
+            <br>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-success choices" id="0"></button>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-success choices" id="1"></button>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-success choices" id="2"></button>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-success choices" id="3"></button>
+            </div>
+        </div>
+            <div class="col-12">
+                <p id="time-remaining">TIME REMAINING</p>
+                <p id="timer"></p>
+                    <!-- <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" id="answer-box">
+        <div class="row">
+            <div class="col-12">
+                <br>
+                <p style="margin-top: 10px;" id="evaluate"></p>
+                <p class="correct-answer">ANSWER
+                    <div class="correct-answer" id="correct-answer-id"></div></p>
+            </div>
+            <div class="col-12">
+                <img class="img-fluid" id="picture" src="http://placehold.it/200/200">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="score-box">
+        <div class="row">
+            <div class="col-12">
+                <h2>SCORE</h2><hr>
+                <p>CORRECT: <span class="correct-text"></span></p>
+                <p>INCORRECT: <span class="incorrect-text"></span></p>
+                <p>TIMEOUT: <span class="skipped-text"></span></p>
+            </div>
+        </div>
+        <div class="row"> 
+            <button class="btn btn-success btn-block" id="restart">RESTART</button>
+        </div>
+    </div>
+</canvas>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
