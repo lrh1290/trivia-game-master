@@ -12,25 +12,21 @@ var placeholder = 0;
 
 var questions = [
     {
-        picture: "https://media.giphy.com/media/3og0IFUvDyPsTMHuhy/giphy.gif",
         question: "4 - 3",
         choices: ['1', '2', '3', '4'],
         correct: 0,
     },
     {
-        picture: "https://media.giphy.com/media/3og0IFUvDyPsTMHuhy/giphy.gif",
         question: "3 - 1",
         choices: ['1', '2', '3', '4'],
         correct: 1,
     },
     {
-        picture: "https://media.giphy.com/media/3og0IFUvDyPsTMHuhy/giphy.gif",
         question: "1 + 2",
         choices: ['1', '2', '3', '4'],
         correct: 2,
     },
     {
-        picture: "https://media.giphy.com/media/3og0IFUvDyPsTMHuhy/giphy.gif",
         question: "2 + 2",
         choices: ['1', '2', '3', '4'],
         correct: 3,
@@ -70,17 +66,14 @@ function updateAnswer(x) {
     $("#answer-box").show();
 
     var correctplaceholder = questions[placeholder].correct;
-    var correctPicture = questions[placeholder].picture;
 
     if (x == questions[placeholder].correct) {
-        $("#evaluate").html("<h2>CORRECT</h2>");
+        $("#evaluate").html("<h2 class = container-text>CORRECT</h2>");     
     } else if (x == "timeout") {
-        $("#evaluate").html("<h2>TIME UP</h2>")
+        $("#evaluate").html("<h2 class = container-text>TIME UP</h2>")
     } else {
-        $("#evaluate").html("<h2>INCORRECT</h2>");
+        $("#evaluate").html("<h2 class = container-text>INCORRECT</h2>");
     }
-
-    $("#picture").attr("src", correctPicture);
     $(".correct-text").text(correct);
     $(".incorrect-text").text(incorrect);
     $(".skipped-text").text(skipped);
